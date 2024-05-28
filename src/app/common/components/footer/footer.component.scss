@@ -1,0 +1,9 @@
+.wraaper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    .text{
+        color: var(--secondary-text-color);
+    }
+}
