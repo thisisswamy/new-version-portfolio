@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import './app/common/scss/light';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+  
+:root {
+    --primary-text-color: #{$primary-text-color};
+    --back-ground-color: #{$back-ground-color};
+    --card-bg-color: #{$card-bg-color};
+    --box-shadow-color: #{$box-shadow-color};
+    --button-bg-color: #{$button-bg-color};
+    --secondary-text-color: #{$secondary-text-color};
+    --box-border-color: #{$box-border-color};
+    --active-link-color: #{$active-link-color};
+    --button-text-color: #{$button-text-color};
+    --button-bg-hover-color: #{$button-bg-hover-color};
+    --theme-body-bg-color: #{$theme-body-bg-color};
+    --secondary-bg-color: #{$secondary-bg-color};
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter Tight", sans-serif;
+    letter-spacing: 1px;
+    
+}
+body{
+    background:var(--theme-body-bg-color);
+}
+
+
+.flex-align-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

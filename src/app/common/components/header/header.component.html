@@ -1,0 +1,35 @@
+<div class="wrapper">
+    <div class="heading-tag">
+        <h2><>Works</h2>
+    </div>
+    <div class="nav-links">
+        <div class="theme-icons" (click)="themeTogggler()">
+            @if(!isDarkTheme){
+                <i class="bi bi-brightness-high-fill"></i>
+            }
+            @else {
+                <i class="bi bi-moon-stars-fill"></i>
+            }
+        </div>
+        <div class="menu-icons-area">
+            <div class="menu-icons" (click)="openMenu()">
+                @if (!isMenuOpen) {
+                    <i class="bi bi-list" ></i>
+                }
+                @else{
+                    <i class="bi bi-x-lg"></i>
+                }
+            </div>
+            @if(isMenuOpen){
+                <ul>
+                    <li>Projects </li>
+                    <li>Experience</li>
+                    <li>Skills</li>
+                    <li>Education</li>
+                    <li>About</li>
+                </ul>
+            }
+        </div>
+        
+    </div>
+</div>

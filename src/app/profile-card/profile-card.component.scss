@@ -1,0 +1,139 @@
+.wrapper{
+    background: var(--back-ground-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    padding: 15px 15px 0 15px; 
+    box-shadow: 0 0 10px var(--box-shadow-color);
+    .profile-logo{
+        position: relative;
+        top: -3rem;
+        background-color: inherit;
+        img{
+            width: 250px;
+            border-radius: 10px;
+        }
+    }
+    .info-card{
+        position: relative;
+        top: -2em;
+        background-color: var(--back-ground-color);
+        .author-brief{
+            background-color: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1em;
+            .name{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               gap: .4em;
+               span{
+                background-color: var(--secondary-bg-color);
+                padding: .5em 1em;
+                border-radius: 5px;
+               }
+            }
+            .social-icons{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap: 2em;
+               i{
+                background-color: var(--secondary-bg-color);
+                padding: .3em .8em;
+                border-radius: 5px;
+                font-size: 1.4em;
+                cursor: pointer;
+               }
+               .bi-linkedin{
+                color: rgb(2, 32, 168);
+               }
+               .bi-envelope-at-fill{
+                 color: red;
+
+               }
+
+               i:hover{
+                background-color: var(--active-link-color);
+                color: #fff;
+               }
+            }
+        }
+        .contact-info{
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            margin-top: 2em;
+            background-color: var(--secondary-bg-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 2em;
+            .info{
+                display: flex;
+                gap: .4em;
+                align-items: center;
+                border-bottom: 1px solid #dddd;
+                padding-bottom: .8em;
+                .info-icon{
+                    i{
+                        font-size: 1.5em;
+                        background-color: var(--back-ground-color);
+                        padding: .3em .6em;
+                        border-radius: 8px;
+                        cursor: pointer;
+                    }
+                    i:hover{
+                        background-color: var(--active-link-color);
+                        color: #ffff;
+                    }
+                    .bi-phone{
+                        color: rgb(0, 200, 255);
+                    }
+                    .bi-envelope-paper{
+                        color: rgb(209, 6, 6);
+                    }
+                    .bi-geo-fill{
+                        color: green;
+                    }
+                }
+                .info-content{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .3em;
+                    .heading{
+                        font-size: small;
+                        opacity: .8;
+                    }
+
+                }
+                
+            }
+            
+        }
+        .download-btn{
+            margin-top: 2em; 
+            button{
+                all: unset;
+                background-color: var(--button-bg-color);
+                color: var(--button-text-color);
+                padding: 1.1em 6em;
+                border-radius: 8px;
+
+
+            }
+            button:hover{
+                background-color: var(--button-bg-hover-color);
+            }
+        }
+    }
+    
+    
+
+}   
