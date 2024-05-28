@@ -1,1 +1,52 @@
-<p>education works!</p>
+<div class="wrapper">
+    <app-title-card [pageTitle]="pageTitle"></app-title-card>
+    <div class="education-section">
+        <div class="section-heading">
+            <h3>Education</h3>
+        </div>
+        <div class="section-content">
+            <p class="degree">Bachelors of Technology in Electronics and Commucation Engineering</p>
+            <p class="college">V N R Vignana Jyothi Institute of Engineering and Techology.</p>
+            <small> 2018 - 2021</small>
+        </div>
+    </div>
+    <div class="skills-section">
+        <div class="section-heading">
+            <h3>Skills</h3>
+        </div>
+        <div class="section-content">
+            <div class="programming">
+                <p>Programming</p>
+                <ul>
+                    @for (skill of pSkills; track $index) {
+                        <li>{{skill}}</li>
+                    }
+                </ul>
+            </div>
+            <div class="programming">
+                <p>Frameworks & Libraries</p>
+                <ul>
+                    @for (skill of frameworks; track $index) {
+                        <li>{{skill}}</li>
+                    }
+                </ul>
+            </div>
+            <div class="programming">
+                <p>Tools</p>
+                <ul>
+                    @for (skill of tools; track $index) {
+                        <li>{{skill}}</li>
+                    }
+                </ul>
+            </div>
+            <div class="programming">
+                <p>Database</p>
+                <ul>
+                    @for (skill of dataBases; track $index) {
+                        <li>{{skill}}</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+.wrapper{
+    padding: 2em 2em;
+
+    .project-container{
+        margin: 2em 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        .project{
+            cursor: pointer;
+            width: 370px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: var(--secondary-bg-color);
+            .project-image{
+                img{
+                    width: 320px;
+                    border-radius: 4px;
+                }
+            }
+            .project-details{
+                padding-top: 1em;
+                p{
+                    padding-top: .3em;
+                    color: var(--secondary-text-color);
+
+                }
+            }
+        }
+        .project:hover{
+            color: #fff;
+            background-color: var(--active-link-color);
+            .project-details{
+                p{
+                    color: #f1f1f1;
+                }
+            }
+        }
+    }
+
+
+}

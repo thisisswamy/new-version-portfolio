@@ -1,0 +1,56 @@
+.wrapper{
+    padding: 2em;
+    .work-exp-area{
+        padding: 1em 0;
+        .exp-1{
+            .company-name{
+                padding: 1em 0;
+                h3{
+                    padding: .3em 0;
+                   
+                }
+                p{
+                    padding: .2em 0;
+                    font-weight: 500;
+                }
+                small{
+                    font-style: italic;
+                }
+
+            }
+            .roles-res{
+                
+                p{
+                    font-weight: 600;
+                }
+                .project-name{
+                    padding-top: 1em;
+                }
+               .project-area{
+                display: flex;
+                margin-top: .8em;
+                gap: 1.5em;
+                flex-direction: column;
+                .project-info{
+                    border-radius: 8px;
+                    padding: 5px 18px;
+                    
+                    background-color: var(--secondary-bg-color);
+                    ul{
+                        color: var(--secondary-text-color);
+                        list-style: " - ";
+                        padding: 10px;
+                        li{
+                            padding: 5px;
+                            line-height: 15px;
+                        }
+                    }
+                }
+               }
+
+            }
+            
+        }
+
+    }
+}

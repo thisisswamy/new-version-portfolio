@@ -1,0 +1,80 @@
+.wrapper{
+    padding: 2em;
+    .education-section{
+        padding: 2em 0;
+        .section-heading{
+
+        }
+        .section-content{
+            margin-top: 1rem;
+            padding: 15px;
+            color: var(--secondary-text-color);
+            border-radius: 8px;
+            background-color: var(--secondary-bg-color);
+            p{
+                padding-bottom: 6px; 
+            }
+            .degree{
+                font-weight: 700;
+            }
+            .programming{
+                p{
+                    padding: 6px 0;
+                    font-weight: 600;
+                }
+                ul{
+                    list-style: none;
+                    padding: 10px;
+                    li{
+                        letter-spacing: 2px;
+                        line-height: 25px;
+                        
+                       
+                    }
+                }
+
+            }
+        }
+    }
+    .skills-section{
+        margin-top: 1em;
+        .section-content{
+            display: flex;
+            // align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .programming{
+                margin-top: 1em;
+                width: 250px;
+                padding: 1rem;
+                background-color: var(--secondary-bg-color);
+                color: var(--secondary-text-color);
+                border-radius: 10px;
+                p{
+                    font-weight: 600;
+                    // border-bottom: 2px solid var(--primary-text-color);
+
+                }
+                ul{
+                    list-style: " - ";
+                    padding-left:  1em;
+                    padding-top: .4em;
+                    
+                    li{
+                        // letter-spacing: 2px;
+                        border-radius: 8px;
+                        padding: .3em 0;
+                       
+                    }
+                }
+    
+            }
+            .programming:hover{
+                background-color: var(--active-link-color);
+                color: #fff;
+            }
+
+        }
+
+    }
+}

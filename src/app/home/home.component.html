@@ -5,26 +5,26 @@
     <div class="home-router">
         <router-outlet></router-outlet>
     </div>
-    <div class="home-nav-links">
-        <div class="link">
+    <div class="home-nav-links" > 
+        <div class="link" (click)="pageNavigate('about')" [ngClass] = "currrentLink ==='about'?'active':''" >
             <span class="link-icon">
                 <i class="bi bi-person"></i>
             </span>
-            <span class="link-text">About</span>
+            <span class="link-text" routerLink="/about" >About</span>
         </div>
-        <div class="link">
+        <div class="link" (click)="pageNavigate('workExperience')" [ngClass] = "currrentLink ==='workExperience'?'active':''" >
             <span class="link-icon">
                 <i class="bi bi-briefcase"></i>
             </span>
             <span class="link-text">Experience</span>
         </div>
-        <div class="link">
+        <div class="link" (click)="pageNavigate('education-skills')" [ngClass] = "currrentLink ==='education-skills'?'active':''" >
             <span class="link-icon">
                 <i class="bi bi-journal-code"></i>
             </span>
-            <span class="link-text">Education</span>
+            <span class="link-text">Edu.&Skills</span>
         </div>
-        <div class="link">
+        <div class="link" (click)="pageNavigate('projects')" [ngClass] = "currrentLink ==='projects'?'active':''" >
             <span class="link-icon">
                 <i class="bi bi-pie-chart-fill"></i>
             </span>

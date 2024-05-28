@@ -1,1 +1,34 @@
-<p>work works!</p>
+<div class="wrapper">
+    <app-title-card [pageTitle]="pageTitle"></app-title-card>
+    <div class="work-exp-area">
+        <div class="exp-1">
+            @for (project of workExperience; track $index) {
+                <div class="company-name">
+                    <h3>{{project.designation +" | " + project.role}}</h3>
+                    <p>{{project.company}}</p>
+                    <small>{{project.fromToDates}}</small>
+                 </div>
+                 <div class="roles-res">
+                      <p>Projects & Responsibilities</p>
+                     
+                      <div class="project-area">
+                        @for (res of project.projects;track $index) {
+                                <div class="project-info">
+                                    <p class="project-name">{{($index+1) + ". " +res.title}}</p>
+                                    <ul>
+                                        @for (obj of res.responsibilities; track $index) {
+                                            <li>{{obj}}</li>
+                                        }
+                                    </ul>
+                                </div>
+                            }
+                        </div>
+
+                      
+                 </div>
+            }
+        </div>
+    </div>
+
+    
+</div>
