@@ -35,6 +35,7 @@
             transition: all 5s ease-in;
             .menu-icons{
                 cursor: pointer;
+                display: none;
                i{
                 font-size: 1.2em;
                 font-weight: 700;
@@ -43,17 +44,23 @@
                 box-shadow:0 0 10px 0 var(--box-shadow-color);
                 border-radius: 45%;
                }
+
+               @media(max-width:1020px){
+                 display: block;
+                }
             }
             ul{
                 position: absolute;
+                z-index: 999999;
                 right: 20%;
                 top: 2.5rem;
                 margin: 0;
                 list-style: none;
                 background-color: var(--back-ground-color);
                 box-shadow: 0 0 10px 0 var(--box-shadow-color);
-                padding:1.5rem  3rem;
+                padding:1.5rem  1rem;
                 border-radius: 8px;
+                width: 200px;
                 li{
                     padding-top: 15px;
                     cursor: pointer;
@@ -61,6 +68,10 @@
                 }
                 li:hover{
                     color: var(--active-link-color);
+                }
+                li.active{
+                    color: var(--active-link-color);
+                    font-weight: 600;
                 }
                 
             }

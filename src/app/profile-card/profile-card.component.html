@@ -9,9 +9,9 @@
                 <span>Fullstack Developer</span>
             </div>
             <div class="social-icons">
-                <i class="bi bi-github"></i>
-                <i class="bi bi-linkedin"></i>
-                <i class="bi bi-envelope-at-fill"></i>
+                <i class="bi bi-github" (click)="toGitHub()"></i>
+                <i class="bi bi-linkedin" (click)="toLinkedin()"></i>
+                <i class="bi bi-envelope-at-fill" (click)="toGmail()"></i>
             </div>
         </div>
         <div class="contact-info">
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="download-btn flex-align-center">
-            <button>
+            <button (click)="downloadResume()">
                 <i class="bi bi-download"></i>
                 Download
             </button>

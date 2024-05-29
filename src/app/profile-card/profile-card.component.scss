@@ -132,6 +132,9 @@
                 background-color: var(--button-bg-hover-color);
             }
         }
+        @media(max-width:1020px){
+            width: 100%;
+        }
     }
     
     

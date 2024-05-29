@@ -2,7 +2,7 @@
     padding: 2em;
     .heading-content{
         padding: 1em 0;
-        color: #44566c;
+        color: var(--secondary-text-color);
         line-height: 25px;
         
     }
@@ -60,5 +60,9 @@
                 }
             }
         }
+    }
+
+    @media(max-width:1020px){
+        padding: 0;
     }
 }

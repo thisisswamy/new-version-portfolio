@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 @import './app/common/scss/light';
+@import './app/common/scss/dark';
 @import 'bootstrap-icons/font/bootstrap-icons.css';
   
-:root {
+body {
     --primary-text-color: #{$primary-text-color};
     --back-ground-color: #{$back-ground-color};
     --card-bg-color: #{$card-bg-color};
@@ -15,6 +16,22 @@
     --button-bg-hover-color: #{$button-bg-hover-color};
     --theme-body-bg-color: #{$theme-body-bg-color};
     --secondary-bg-color: #{$secondary-bg-color};
+    background:var(--theme-body-bg-color);
+}
+
+body.dark{
+    --primary-text-color: #{$dark-primary-text-color};
+    --back-ground-color: #{$dark-back-ground-color};
+    --card-bg-color: #{$dark-card-bg-color};
+    --box-shadow-color: #{$dark-box-shadow-color};
+    --button-bg-color: #{$dark-button-bg-color};
+    --secondary-text-color: #{$dark-secondary-text-color};
+    --box-border-color: #{$dark-box-border-color};
+    --active-link-color: #{$dark-active-link-color};
+    --button-text-color: #{$dark-button-text-color};
+    --button-bg-hover-color: #{$dark-button-bg-hover-color};
+    --theme-body-bg-color: #{$dark-theme-body-bg-color};
+    --secondary-bg-color: #{$dark-secondary-bg-color};
 }
 
 *{
@@ -25,9 +42,9 @@
     letter-spacing: 1px;
     
 }
-body{
-    background:var(--theme-body-bg-color);
-}
+
+
+
 
 
 .flex-align-center{

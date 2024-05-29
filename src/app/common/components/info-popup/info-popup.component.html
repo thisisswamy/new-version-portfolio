@@ -1,0 +1,29 @@
+<div class="wrapper">
+    <span class="close-icon" (click)="close()">
+        <i class="bi bi-x"></i>  
+    </span>
+    <div class="project-heading">
+        <h3>{{project && project.title}}</h3>
+    </div>
+    <div class="image-container">
+        <div class="controls" >
+            <i class="bi bi-caret-left"></i>
+            <i class="bi bi-caret-right"></i>
+        </div>
+        <img [src]="project.poster" alt="">
+    </div>
+    <div class="project-details">
+        <div class="info">
+            <ul>
+                @for (item of project.info; track $index) {
+                    <li>{{item}}</li>
+                }
+            </ul>
+        </div>
+        <div class="techs-stack">
+            @for (tech of project.techs; track $index) {
+                <span>{{tech}}</span>
+            }
+        </div>
+    </div>
+</div>

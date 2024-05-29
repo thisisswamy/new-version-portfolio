@@ -1,10 +1,10 @@
 <div class="wrapper">
     <div class="heading-tag">
-        <h2><>Works</h2>
+        <h2>< / ></h2>
     </div>
     <div class="nav-links">
         <div class="theme-icons" (click)="themeTogggler()">
-            @if(!isDarkTheme){
+            @if(isDarkTheme){
                 <i class="bi bi-brightness-high-fill"></i>
             }
             @else {
@@ -22,11 +22,10 @@
             </div>
             @if(isMenuOpen){
                 <ul>
-                    <li>Projects </li>
-                    <li>Experience</li>
-                    <li>Skills</li>
-                    <li>Education</li>
-                    <li>About</li>
+                    <li routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="isMenuOpen = !isMenuOpen" >Projects </li>
+                    <li routerLink="/workExperience" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"  (click)="isMenuOpen = !isMenuOpen" >Experience</li>
+                    <li routerLink="/education-skills" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="isMenuOpen = !isMenuOpen"  >Education & Skills</li>
+                    <li routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="isMenuOpen = !isMenuOpen"  >About</li>
                 </ul>
             }
         </div>

@@ -31,6 +31,23 @@ export class DataConstants{
               ],
             },
             {
+              title:'Admin Portal for Taxi-Services',
+              responsibilities:[
+                "It is an admin portal, where users can register by themselves and configure metadata for taxi services.",
+                "It will help admins & users to have payout reports and schedule/utilize the products and services.",
+                "Designed clean, interactive UI and integrated complex RestFull Apis."
+              ],
+              keywords: [
+                'Angular',
+                'RxJs',
+                'Rest API',
+                'Postman',
+                'Unit testing',
+                'Jasmine',
+                'NginX',
+              ],
+            },
+            {
               title: 'Proxy Generated Tool.',
               responsibilities: [
                 'Have developed clean, responsive, and conditional rendering user interfaces.',
@@ -83,4 +100,35 @@ export class DataConstants{
         //   ],
         // },
       ];
+
+    public static personalProjects =[
+      {
+        title:'Movie Review Application',
+        cardTitle:'Angular + Java Fullstack Application',
+        poster:'./assets/projects/my-reviews-page.png',
+        info:[
+          'It is moview web application, where can upload a movie poster and write reviews and perform CRUD Operations',
+          "End to End Authenticated"
+        ],
+        techs:[
+          'Angular','NgRx','Java','SpringBoot', 'Spring Security','Mongo DB' ,'RESTful APIs'
+        ]
+        
+        
+      },
+      {
+        title:'Notes Application',
+        cardTitle:'React + Java Fullstack Application',
+        poster:'./assets/projects/notes-app/home-dark-theme.png',
+        info:[
+          'It is Notes taking web application, where user can take a notes and perform CRUD Operation',
+          "End to End Authenticated"
+        ],
+        techs:[
+          'React','Redux','Java','SpringBoot', 'Spring Security','Mongo DB','RESTful APIs'
+        ]
+        
+        
+      }
+    ]
 }

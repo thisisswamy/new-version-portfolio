@@ -1,6 +1,11 @@
 .wrapper{
     padding: 4rem;
+    color:var(--primary-text-color);
     .router-content{
         // padding: 2rem;
     }
+    @media(max-width:1020px){
+        padding: 10px;
+    }
+    
 }

@@ -6,6 +6,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         gap: 10px;
         .project{
             cursor: pointer;
@@ -17,6 +18,7 @@
                 img{
                     width: 320px;
                     border-radius: 4px;
+                    
                 }
             }
             .project-details{
@@ -26,6 +28,9 @@
                     color: var(--secondary-text-color);
 
                 }
+            }
+            @media(max-width:1020px){
+                padding: 10px;
             }
         }
         .project:hover{
@@ -37,7 +42,58 @@
                 }
             }
         }
+
+        @media(max-width:1020px){
+           justify-content: center;
+           align-items: center;
+        }
+    }
+    @media(max-width:1020px){
+        padding: 0;
     }
 
 
 }
+
+.popup-area{
+    position: fixed;
+    height: 100dvh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    transition: .3s ease;
+    visibility: hidden;
+    opacity: 0;
+    backdrop-filter: blur(5px);
+    .popup{
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow:  0 0 10px 0 var(--box-shadow-color);
+        background-color: var(--back-ground-color);
+        max-width: 750px;
+        width: 100%;
+        transform: translateY(-50px);
+        transition: .5s ease;
+
+        @media(max-width:1020px){
+            padding: 10px;
+            width: 400px;
+        }
+    }
+    
+}
+.active{
+    visibility: visible;
+    opacity: 1;
+}
+.popup-area.active{
+    transform: translateY(0);
+    .popup{
+        transform: translateY(0);
+    }
+}
+

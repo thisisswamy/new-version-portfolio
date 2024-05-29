@@ -67,6 +67,9 @@
                        
                     }
                 }
+                @media(max-width:1020px){
+                    width: 100%;
+                }
     
             }
             .programming:hover{
@@ -76,5 +79,9 @@
 
         }
 
+
+    }
+    @media(max-width:1020px){
+        padding: 0;
     }
 }
