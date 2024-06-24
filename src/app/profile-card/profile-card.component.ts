@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class ProfileCardComponent {
 
   downloadResume(){
-    window.open("https://drive.google.com/file/d/135mzX4Ge3IEY3Ek8JVFTNgG3wp8JosOP/view?usp=sharing","_blank")
+    window.open("https://drive.google.com/file/d/1V_w8YY3aRnL1fRp4W6PQwvQEFZEJ3Duk/view?usp=sharing","_blank")
   }
   toGitHub(){
     window.open("https://github.com/thisisswamy","_blank")
